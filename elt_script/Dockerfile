@@ -1,7 +1,7 @@
 FROM python:3.8-slim
 
 # Install PostgreSQL command-line tools
-RUN apt-get update && apt-get remove postgresql-client-15 && apt-get install -y postgresql-client-17
+RUN apt-get update && apt-get install -y postgresql-client-15
 
 # Copy the ELT script 
 COPY elt_script.py .
